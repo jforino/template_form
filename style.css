@@ -28,3 +28,39 @@
   #root, #__next {
     isolation: isolate;
   }
+
+  /* My CSS Code */
+
+  #wicked_logo{
+    width: 15%;
+    height: auto;
+    position: absolute;
+    top: 300px;
+
+  }
+
+  #black_box{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 300px;
+    width: 35%;
+    position: absolute;
+    top: 300px;
+}
+
+  .screen_left{
+    background-image: url(./images/leaves.jpg);
+    width: 35%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+  }
+
+  .main{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .screen_right{
+    display: flex;
+    justify-content: center;
+  }
