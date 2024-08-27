@@ -16,7 +16,97 @@
     </div>
 
     <div class="screen_right">
-        <h1>Template Form </h1>
+            <h1 class="title">Template Form</h1>
+            <div class="template_form">
+            <form action="post">
+            
+            <div id="eventInfo">
+            <fieldset>
+                <legend>Event Info</legend>
+
+                <div class="eventItem">
+                <label for="clientName">Client Name:</label>
+                <input type="text" name="clientName" id="clientName" required>
+                </div>
+                
+                <div class="eventItem">
+                <label for="clientEmail">Client Email:</label>
+                <input type="email" name="clientEmail" id="clientEmail" required>
+                </div>
+                
+                <div class="eventItem">
+                <label for="guestCount">Estimated Guest Count:</label>
+                <input type="number" name="guestCount" id="guestCount" required>
+                </div>
+
+                <div class="eventItem">
+                <label for="eventDate">Event Date:</label>
+                <input type="date" name="eventDate" id="eventDate" required>
+                </div>
+
+                <div class="eventItem">
+                <label for="boothType">Booth Type:</label>
+                <select name="boothType" id="boothType">
+                    <option value="Mirror">Mirror</option>
+                    <option value="Pylon">Pylon</option>
+                    <option value="360">360</option>
+                    <option value="Aura">Aura</option>
+                </select>
+                </div>
+            </fieldset>
+            </div>
+
+            <div id="templateInfo">
+                <fieldset>
+                    <legend>Template Information</legend>
+
+                    <div class="eventItem">
+                        <label for="templateText">Text on Template:</label>
+                        <input type="text" name="templateText" id="templateText">                 
+                    </div>
+                    
+                    <div class="eventItem">
+                        <div>Template Layout:</div>
+                        <div style="margin-left: 40px;">
+                            <input type="radio" name="templateLayout" id="4x6" value="4x6">
+                            <label for="4x6">4x6 Postcards</label>
+                        </div>
+                        <div style="margin-left: 40px;">
+                            <input type="radio" name="templateLayout" id="2x6" value="2x6">
+                            <label for="2x6">2x6 Strips</label> 
+                        </div>
+                    </div>
+
+                    <div class="eventItem">
+                        <label for="textColor">Color of Text:</label>
+                        <input type="text" name="textColor" id="textColor"  >
+                    </div>
+
+                    <div class="eventItem">
+                        <label for="specialLogo">Special Logos / Images:</label>
+                        <input type="file" name="specialLogo" id="specialLogo">
+                    </div>
+
+                    <div class="eventItem">
+                        <label for="preferredFonts">Preferred Fonts: </label>
+                        <input type="text" name="preferredFonts" id="preferredFonts">
+                    </div>
+
+                    <div class="eventItem">
+                        <label for="eventTheme">Theme of Event: </label>
+                        <input type="text" name="eventTheme" id="eventTheme">
+                    </div>
+                    
+                    <div class="eventItem">
+                        <label for="specialInstructions">Specials Notes / Requests for template</label>
+                        <textarea name="specialInstructions" id="specialInstructions" ></textarea>
+                    </div>
+                </fieldset>
+            </div>
+
+            <input type="submit" value="Submit" id="submitButton">
+            </form>
+            
     </div>
     
 </div>

@@ -31,12 +31,24 @@
 
   /* My CSS Code */
 
+  *{
+    font-size: 20px;
+  }
+
+  h1{
+    font-size: 50px;
+  }
+
+  .title{
+    display: flex;
+    justify-content: center;
+  }
+
   #wicked_logo{
     width: 15%;
     height: auto;
     position: absolute;
-    top: 300px;
-
+    top: 350px;
   }
 
   #black_box{
@@ -61,6 +73,46 @@
   }
 
   .screen_right{
+    width: 65%; 
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: bisque;
+  }
+
+#eventInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#templateInfo{
     display: flex;
     justify-content: center;
-  }
+    align-items: center;
+}
+
+.eventItem{
+    margin: 10px;
+}
+
+#specialInstructions{
+    width: 200px;
+    max-width: 350px;
+    max-height: 200px;
+}
+
+fieldset{
+    width: 800px;
+}
+
+#submitButton{
+    position: relative;
+    left: 50%;
+    margin-top: 30px;
+    padding: 10px 15px;
+    transform: translate(-50px, 0px);
+    background-color: rgba(195, 255, 192);
+    border: black solid 3px;
+}
