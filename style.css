@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Oswald:wght@200..700&display=swap');
 /* Josh Comeau's CSS RESET */
 *, *::before, *::after {
     box-sizing: border-box;
@@ -29,10 +30,14 @@
     isolation: isolate;
   }
 
+  /* Import custom font */
+ 
   /* My CSS Code */
 
   *{
     font-size: 20px;
+    font-family: "Manrope", 'Courier New', 'Arial';
+    font-weight: 400;
   }
 
   h1{
@@ -107,12 +112,21 @@ fieldset{
     width: 800px;
 }
 
+#fieldsetEvent{
+    display: flex;
+}
+
 #submitButton{
     position: relative;
     left: 50%;
-    margin-top: 30px;
+    margin-top: 20px;
     padding: 10px 15px;
+    width: 8%;
     transform: translate(-50px, 0px);
     background-color: rgba(195, 255, 192);
     border: black solid 3px;
+}
+
+label{
+    display: block;
 }

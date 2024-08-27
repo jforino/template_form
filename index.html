@@ -21,37 +21,40 @@
             <form action="post">
             
             <div id="eventInfo">
-            <fieldset>
+            <fieldset id="fieldsetEvent">
                 <legend>Event Info</legend>
 
-                <div class="eventItem">
-                <label for="clientName">Client Name:</label>
-                <input type="text" name="clientName" id="clientName" required>
-                </div>
-                
-                <div class="eventItem">
-                <label for="clientEmail">Client Email:</label>
-                <input type="email" name="clientEmail" id="clientEmail" required>
-                </div>
-                
-                <div class="eventItem">
-                <label for="guestCount">Estimated Guest Count:</label>
-                <input type="number" name="guestCount" id="guestCount" required>
-                </div>
-
-                <div class="eventItem">
-                <label for="eventDate">Event Date:</label>
-                <input type="date" name="eventDate" id="eventDate" required>
+                <div class="container">
+                    <div class="eventItem">
+                    <label for="clientName">Client Name:</label>
+                    <input type="text" name="clientName" id="clientName" required>
+                    </div>
+                    
+                    <div class="eventItem">
+                    <label for="clientEmail">Client Email:</label>
+                    <input type="email" name="clientEmail" id="clientEmail" required>
+                    </div>
+                    
+                    <div class="eventItem">
+                    <label for="guestCount">Estimated Guest Count:</label>
+                    <input type="number" name="guestCount" id="guestCount" required>
+                    </div>
                 </div>
 
-                <div class="eventItem">
-                <label for="boothType">Booth Type:</label>
-                <select name="boothType" id="boothType">
-                    <option value="Mirror">Mirror</option>
-                    <option value="Pylon">Pylon</option>
-                    <option value="360">360</option>
-                    <option value="Aura">Aura</option>
-                </select>
+                <div class="container">
+                    <div class="eventItem">
+                    <label for="eventDate">Event Date:</label>
+                    <input type="date" name="eventDate" id="eventDate" required>
+                    </div>
+
+                    <div class="eventItem">
+                    <label for="boothType">Booth Type:</label>
+                    <select name="boothType" id="boothType">
+                        <option value="Mirror">Mirror</option>
+                        <option value="Pylon">Pylon</option>
+                        <option value="360">360</option>
+                        <option value="Aura">Aura</option>
+                    </select>
                 </div>
             </fieldset>
             </div>
@@ -69,11 +72,11 @@
                         <div>Template Layout:</div>
                         <div style="margin-left: 40px;">
                             <input type="radio" name="templateLayout" id="4x6" value="4x6">
-                            <label for="4x6">4x6 Postcards</label>
+                            <label for="4x6" style="display: inline;">4x6 Postcards</label>
                         </div>
                         <div style="margin-left: 40px;">
                             <input type="radio" name="templateLayout" id="2x6" value="2x6">
-                            <label for="2x6">2x6 Strips</label> 
+                            <label for="2x6" style="display: inline;">2x6 Strips</label> 
                         </div>
                     </div>
 
