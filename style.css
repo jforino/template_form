@@ -37,7 +37,7 @@
   *{
     font-size: 20px;
     font-family: "Manrope", 'Courier New', 'Arial';
-    font-weight: 400;
+    font-weight: 600;
   }
 
   h1{
@@ -103,9 +103,9 @@
 }
 
 #specialInstructions{
-    width: 200px;
-    max-width: 350px;
-    max-height: 200px;
+    width: 700px;
+    height: 100px;
+    resize: none;
 }
 
 fieldset{
@@ -127,6 +127,22 @@ fieldset{
     border: black solid 3px;
 }
 
-label{
+label, .label{
     display: block;
+    font-weight: 400;
+}
+
+.redasterisk{
+    color: rgb(255, 21, 21);
+}
+
+legend{
+    font-size: 1.5em;
+}
+
+input:focus{
+  padding: 0px; 
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }

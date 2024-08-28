@@ -26,29 +26,29 @@
 
                 <div class="container">
                     <div class="eventItem">
-                    <label for="clientName">Client Name:</label>
+                    <label for="clientName"><span class="redasterisk">*</span>Client Name:</label>
                     <input type="text" name="clientName" id="clientName" required>
                     </div>
                     
                     <div class="eventItem">
-                    <label for="clientEmail">Client Email:</label>
+                    <label for="clientEmail"><span class="redasterisk">*</span>Client Email:</label>
                     <input type="email" name="clientEmail" id="clientEmail" required>
                     </div>
                     
                     <div class="eventItem">
-                    <label for="guestCount">Estimated Guest Count:</label>
-                    <input type="number" name="guestCount" id="guestCount" required>
+                    <label for="guestCount"><span class="redasterisk">*</span>Estimated Guest Count:</label>
+                    <input type="number" name="guestCount" id="guestCount" required min="0">
                     </div>
                 </div>
 
                 <div class="container">
                     <div class="eventItem">
-                    <label for="eventDate">Event Date:</label>
+                    <label for="eventDate"><span class="redasterisk">*</span>Event Date:</label>
                     <input type="date" name="eventDate" id="eventDate" required>
                     </div>
 
                     <div class="eventItem">
-                    <label for="boothType">Booth Type:</label>
+                    <label for="boothType"><span class="redasterisk">*</span>Booth Type:</label>
                     <select name="boothType" id="boothType">
                         <option value="Mirror">Mirror</option>
                         <option value="Pylon">Pylon</option>
@@ -64,16 +64,16 @@
                     <legend>Template Information</legend>
 
                     <div class="eventItem">
-                        <label for="templateText">Text on Template:</label>
+                        <label for="templateText"><span class="redasterisk">*</span>Text on Template:</label>
                         <input type="text" name="templateText" id="templateText">                 
                     </div>
                     
                     <div class="eventItem">
-                        <div>Template Layout:</div>
+                        <div class="label"><span class="redasterisk">*</span>Template Layout:</div>
                         <div style="margin-left: 40px;">
                             <input type="radio" name="templateLayout" id="4x6" value="4x6">
                             <label for="4x6" style="display: inline;">4x6 Postcards</label>
-                        </div>
+                        </div>  
                         <div style="margin-left: 40px;">
                             <input type="radio" name="templateLayout" id="2x6" value="2x6">
                             <label for="2x6" style="display: inline;">2x6 Strips</label> 
@@ -81,13 +81,13 @@
                     </div>
 
                     <div class="eventItem">
-                        <label for="textColor">Color of Text:</label>
-                        <input type="text" name="textColor" id="textColor"  >
+                        <label for="textColor"><span class="redasterisk">*</span>Color of Text:</label>
+                        <input type="color" name="textColor" id="textColor" style="width: 50px; height: 50px; display: inline;">
                     </div>
 
                     <div class="eventItem">
                         <label for="specialLogo">Special Logos / Images:</label>
-                        <input type="file" name="specialLogo" id="specialLogo">
+                        <input type="file" name="specialLogo" id="specialLogo" class="label">
                     </div>
 
                     <div class="eventItem">
